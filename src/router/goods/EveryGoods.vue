@@ -105,7 +105,7 @@ import Toast from "../../components/common/toast/Toast";
       // console.log(this.id);
       //根据id发送网络请求，并得到数据
       getDeatil(this.id).then(res => {
-        console.log(res);
+        // console.log(res);
         this.Nimg = res.data.result.itemInfo.topImages
         // console.log(res.data.result.itemInfo.topImages.length)
         let data = res.data.result

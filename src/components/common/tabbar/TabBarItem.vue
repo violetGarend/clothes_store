@@ -1,8 +1,14 @@
 <template>
   <div class="tab-bar-item" @click="itemClick">
-    <div v-if="!isActive" class="item-icon"><slot name="item-icon"></slot></div>
-    <div v-else class="item-active-icon"><slot name="item-active-icon"></slot></div>
-    <div class="item-text" :style="activeStyle"><slot name="item-text"></slot></div>
+    <div v-if="!isActive" class="item-icon">
+      <slot name="item-icon"></slot>
+    </div>
+    <div v-else class="item-active-icon">
+      <slot name="item-active-icon"></slot>
+    </div>
+    <div class="item-text" :style="activeStyle">
+      <slot name="item-text"></slot>
+    </div>
   </div>
 </template>
 
@@ -49,6 +55,6 @@
   }
 
   /*.item-text.active {*/
-    /*color: #ff5777*/
+  /*color: #ff5777*/
   /*}*/
 </style>

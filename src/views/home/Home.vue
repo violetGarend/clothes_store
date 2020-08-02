@@ -71,7 +71,7 @@
       this.getHomeGoods("pop")
       this.getHomeGoods("new")
       this.getHomeGoods("sell")
-      console.log('HomeCreate')
+      // console.log('HomeCreate')
     },
     mounted() {
       //加载完一张图片时就刷新scrollHeight
@@ -168,7 +168,7 @@
     activated() {
       // console.log("hhhhh")
       //根据保存y轴的位置以0秒的方式滚回去
-      this.$refs.scrolls.backTop(0,this.leftY,0)
+      this.$refs.scrolls.backTop(0,this.leftY,.3)
       this.$refs.scrolls.refreshs()
     },
     //失活时
